@@ -1,0 +1,14 @@
+baseURL: http://intro.pluckeye.net/
+languageCode: en-us
+title: Plucky Intro
+uglyurls: true
+
+languages:
+ en:
+  contentDir: content/en
+  languageName: English
+  weight: 1
+markup:
+ goldmark:
+  renderer:
+   unsafe: true
