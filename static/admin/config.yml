@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: master
+  repo: plujon/plucky-intro
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+publish_mode: editorial_workflow
+collections:
+  - name: pages
+    label: Pages
+    folder: content
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: markdown}
