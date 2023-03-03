@@ -7,8 +7,7 @@
 
   <title>{{ .Title }}</title>
 
-  <link rel="mask-icon"  href="https://static.pluckeye.net/images/p64.svg" sizes="any">
-  <link rel="icon"       href="https://static.pluckeye.net/images/p64.png" type="image/png">
+  <link rel="icon" href="https://svg.pluckeye.net/p+.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://static.pluckeye.net/css/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha256-lOaIx2TxVOeXxtwAQFZpAAUfiOvhGa0qruK+8CmB1PQ=" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/css.css">
 </head>
@@ -16,12 +15,19 @@
   <body>
 
     <main class="container">
-      <div class="page-header"><h1>{{ .Title }}</h1></div>
+      <div id="logo">
+        <img src="https://svg.pluckeye.net/p+.svg" height="64">
+      </div>
+      <div class="page-header">
+        <h1>
+          {{ .Title }}
+        </h1>
+      </div>
 
       {{ .Content }}
     </main>
 
-<footer></footer>
+<footer class="container"><hr><a href="https://github.com/plujon/pluckeye-intro"><img src="https://svg.pluckeye.net/github-mark.svg" alt="github" height=24></a></footer>
 <script src="https://static.pluckeye.net/js/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha256-FUy0XjvhyXmBH6ITNasrzdTGPnFiW3RwqHTK42qLljA=" crossorigin="anonymous"></script>
 <script src="https://static.pluckeye.net/js/anchor.min.js" integrity="sha256-jv1iEEP+E8Gii9VNtL2yeIAXCJvQl5vEiMJZT7Ui3Gs=" crossorigin="anonymous"></script>
 <script src="https://static.pluckeye.net/js/onhuman.js"></script>
