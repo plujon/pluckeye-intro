@@ -1,1 +1,1 @@
-https://intro.plucky.net/
+http://intro.pluckeye.net/
